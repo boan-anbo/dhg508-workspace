@@ -1,60 +1,44 @@
-# Week 1: Setup
+# Week 1
 
-Do this before we meet on Wednesday, 9 September. Five things, about an hour.
-Bring the laptop you actually work on.
+Before class on Wednesday, 9 September.
 
-## 1. Install opencode
+## Tasks
 
-opencode is the terminal coding agent we will use in class.
+Install and register. Follow each site's own instructions, since they change
+faster than anything we could keep current here.
 
-Terminal version, recommended:
-
-```bash
-curl -fsSL https://opencode.ai/install | bash
-```
-
-Other ways to install it: `brew install anomalyco/tap/opencode` on macOS, `scoop install opencode` or `choco install opencode` on Windows, `npm install -g opencode-ai` anywhere Node is already installed. On Windows the smoothest setup is inside WSL.
-
-If the terminal feels like too much for now, the desktop version is fine to start with: https://opencode.ai/download
-
-It works when you can type `opencode` in a terminal and the agent starts.
-
-## 2. Get a model behind it
-
-opencode is only the interface. The model is a separate subscription, and you need one.
-
-- If you already pay for Codex or Claude, use that. Do not buy anything else.
-- If you do not, subscribe to opencode go, US$10 a month, cancel any time: https://opencode.ai/go
-
-## 3. Register three accounts
-
-- GitHub: https://github.com
-- OpenRouter: https://openrouter.ai
-- DeepSeek: https://platform.deepseek.com
-
-Free registration is enough. You do not need to add credit before class.
-
-## 4. Install VS Code and GitHub Desktop
-
+- opencode: https://opencode.ai (terminal version recommended, desktop version also fine)
+- A model for opencode: if you already pay for Codex or Claude, use that and buy nothing else. Otherwise opencode go, US$10 a month, cancel any time: https://opencode.ai/go
+- GitHub account: https://github.com
+- OpenRouter account: https://openrouter.ai
+- DeepSeek account: https://platform.deepseek.com
 - VS Code: https://code.visualstudio.com
 - GitHub Desktop: https://desktop.github.com
 
-## 5. Fork the course repository, then clone it with opencode
+Free registration is enough. You do not need to add credit before class.
 
-1. Open the repository home page and use the Fork button at the top right. The copy that appears under your own account is yours.
-2. Open a terminal and start `opencode`.
-3. Ask it, in your own words:
+## Challenges
 
-   > Explain how GitHub works and what I need in order to use it. My fork is at [paste the URL of your fork]. Walk me through cloning it to my computer, and tell me what each step is actually doing.
+Use opencode for both, and make it explain what it is doing rather than just
+doing it.
 
-4. Let the agent do the work, but make it explain while it works. Ask again whenever an answer stays vague.
-5. Open the cloned folder in VS Code. You should see the README.
-6. Add the same folder in GitHub Desktop, so you can watch your own changes.
+### 1. Fork and clone
 
-Clone your fork, not the course repository. That difference is the whole point of step 1.
+Fork the course repository, then clone your fork onto your own computer. Along
+the way, ask the agent to explain how GitHub works and what you actually need in
+order to use it.
+
+Clone your fork, not the course repository.
+
+### 2. Start a project and push it back
+
+In your fork, start a new project from `templates/project_template/`. Any idea
+you like, and a simple one is fine. Write it up as a short document in the
+project, commit, and push it to your own GitHub account.
+
+Be ready to show it in class.
 
 ## Bring to class
 
-The cloned folder on your laptop, one thing the agent explained that you did not know, and one thing you still do not understand. The second one is the more useful of the two.
-
-If something breaks, stop after thirty minutes, take a screenshot of the error, and bring it in. We will look at it together.
+Your fork on your laptop, the project you pushed, and one thing you still do not
+understand. If something breaks, stop after thirty minutes and bring the error.

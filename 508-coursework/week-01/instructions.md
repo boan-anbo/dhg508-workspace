@@ -22,8 +22,8 @@ Free registration is enough. You do not need to add credit before class.
 
 ## Challenges
 
-All three are meant to be done through opencode. Do not look for a tutorial and
-follow it by hand. Tell the agent what you are trying to do, let it work, and
+Do all of these through opencode. Do not look for a tutorial and follow it by
+hand. Tell the agent what you are trying to do, let it work, and
 make it explain what it is doing as it goes. When an answer stays vague, ask
 again until it is not.
 
@@ -67,6 +67,15 @@ opencode about it instead of guessing.
 
 Keep a running note of whatever you do not understand, in the interface or in
 the first two challenges. Commit it to your fork as `questions.md`.
+
+### 4. Open the same folder in VS Code
+
+Open the folder you cloned in the first challenge in VS Code, and find the same
+`assignments/week-01/self-introduction.md` you were just reading on github.com.
+
+One file, two places: a copy on your own machine, and a copy on GitHub. Knowing
+which one you are looking at, and how a change travels from one to the other, is
+most of what git is.
 
 ## Bring to class
 

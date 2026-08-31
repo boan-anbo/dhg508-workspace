@@ -38,7 +38,17 @@ project, commit, and push it to your own GitHub account.
 
 Be ready to show it in class.
 
+### 3. Learn the GitHub interface
+
+Click around your own fork on github.com and work out what the main parts are
+for: the repository home, commits, branches, issues, pull requests, settings,
+and the Fork and Star buttons.
+
+Keep a running note of whatever you do not understand, in the interface or in
+the first two challenges. Commit it to your fork as `questions.md`.
+
 ## Bring to class
 
-Your fork on your laptop, the project you pushed, and one thing you still do not
-understand. If something breaks, stop after thirty minutes and bring the error.
+Your fork on your laptop, the project you pushed, and your `questions.md`. What
+stayed unclear is where we will start. If something breaks, stop after thirty
+minutes and bring the error.

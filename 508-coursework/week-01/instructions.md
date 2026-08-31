@@ -19,8 +19,8 @@ Free registration is enough. You do not need to add credit before class.
 
 ## Challenges
 
-Use opencode for both, and make it explain what it is doing rather than just
-doing it.
+Use opencode where it helps, and make it explain what it is doing rather than
+just doing it.
 
 ### 1. Fork and clone
 

@@ -1,0 +1,9 @@
+# Coursework
+
+One folder per week: `week-01`, `week-02`, and so on. Each week holds its own
+`instructions.md`, plus whatever files that week needs.
+
+Instructions go up before the class they belong to. Read the current week before
+you come.
+
+- [week-01](week-01/instructions.md) setup, and your first clone

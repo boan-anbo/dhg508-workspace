@@ -2,7 +2,7 @@
 
 Start here: [Week 1, what to do before class on Wednesday, 9 September](508-coursework/week-01/instructions.md)
 
-Course workspace, Term 1 2026-27, Lingnan University. You will fork this repository and work in your own copy.
+Course workspace, Term 1 2026-27. You will fork this repository and work in your own copy.
 
 ## What is in this repository
 

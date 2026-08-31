@@ -1,4 +1,4 @@
-# DHG508 Critical Digital History
+# DHG508 Critical Digital History: Hands-on Critical AI for Historians
 
 Start here: [Week 1, what to do before class on Wednesday, 9 September](508-coursework/week-01/instructions.md)
 

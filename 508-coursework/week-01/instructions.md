@@ -57,6 +57,11 @@ Click around your own fork on github.com and work out what the main parts are
 for: the repository home, commits, branches, issues, pull requests, settings,
 and the Fork and Star buttons.
 
+Then try one thing concretely. Find `assignments/week-01/self-introduction.md`
+on github.com, open its history, and look at the change you just made. Work out
+what the red and green lines are telling you, what a commit is, and how the page
+shows who changed what, and when.
+
 Keep a running note of whatever you do not understand, in the interface or in
 the first two challenges. Commit it to your fork as `questions.md`.
 

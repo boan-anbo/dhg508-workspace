@@ -38,9 +38,9 @@ Clone your fork, not the course repository.
 In your fork, make a folder `assignments/week-01/` and write a file in it called
 `self-introduction.md`. Four questions, one short paragraph each:
 
-1. A short introduction of yourself, including where you were before this programme.
+1. A short introduction of yourself.
 2. What do you study, and what interests you in it?
-3. What do you hope to do with AI?
+3. What do you hope to do with AI in historical research?
 4. Do not worry about whether it is realistic. What is one AI project you wish you could finish by the end of the term?
 
 The fourth question is the one to spend time on. Do not trim it down to what you

@@ -9,7 +9,7 @@ faster than anything we could keep current here.
 
 - opencode: https://opencode.ai (terminal version recommended, desktop version also fine)
 - A model for opencode: if you already pay for Codex or Claude, use that and buy nothing else. Otherwise opencode go, US$10 a month, cancel any time: https://opencode.ai/go
-- GitHub account: https://github.com
+- GitHub account: https://github.com (register with a personal email you will still have after graduation, not your Lingnan one, since this account is worth keeping for the rest of your career)
 - OpenRouter account: https://openrouter.ai
 - DeepSeek account: https://platform.deepseek.com
 - VS Code: https://code.visualstudio.com

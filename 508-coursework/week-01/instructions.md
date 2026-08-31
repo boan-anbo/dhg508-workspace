@@ -41,12 +41,12 @@ In your fork, make a folder `assignments/week-01/` and write a file in it called
 1. A short introduction of yourself.
 2. What do you study, and what interests you in it?
 3. What do you hope to do with AI in historical research?
-4. Do not worry about whether it is realistic. What is one AI project you wish you could finish by the end of the term?
-5. What worries you about AI? In historical research, or anywhere else.
+4. What worries you about AI? In historical research, or anywhere else.
+5. Ignore whether it is realistic. What is one AI project you wish you could finish by the end of the term?
 
-The last two are the ones to spend time on. Do not trim the fourth down to what
-you think your current skills allow, and do not soften the fifth into what you
-think a course on critical digital history wants to hear.
+The last two are the ones to spend time on. Do not soften the fourth into what
+you think a course on critical digital history wants to hear, and do not trim
+the fifth down to what you think your current skills allow.
 
 Commit the file and push it to your own GitHub account. Be ready to talk through
 it in class.

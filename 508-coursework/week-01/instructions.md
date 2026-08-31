@@ -22,8 +22,10 @@ Free registration is enough. You do not need to add credit before class.
 
 ## Challenges
 
-Use opencode where it helps, and make it explain what it is doing rather than
-just doing it.
+All three are meant to be done through opencode. Do not look for a tutorial and
+follow it by hand. Tell the agent what you are trying to do, let it work, and
+make it explain what it is doing as it goes. When an answer stays vague, ask
+again until it is not.
 
 ### 1. Fork and clone
 
@@ -60,7 +62,8 @@ and the Fork and Star buttons.
 Then try one thing concretely. Find `assignments/week-01/self-introduction.md`
 on github.com, open its history, and look at the change you just made. Work out
 what the red and green lines are telling you, what a commit is, and how the page
-shows who changed what, and when.
+shows who changed what, and when. Whenever part of the page makes no sense, ask
+opencode about it instead of guessing.
 
 Keep a running note of whatever you do not understand, in the interface or in
 the first two challenges. Commit it to your fork as `questions.md`.

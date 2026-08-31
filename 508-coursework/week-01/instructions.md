@@ -36,15 +36,17 @@ Clone your fork, not the course repository.
 ### 2. Introduce yourself, and push it back
 
 In your fork, make a folder `assignments/week-01/` and write a file in it called
-`self-introduction.md`. Four questions, one short paragraph each:
+`self-introduction.md`. Five questions, one short paragraph each:
 
 1. A short introduction of yourself.
 2. What do you study, and what interests you in it?
 3. What do you hope to do with AI in historical research?
 4. Do not worry about whether it is realistic. What is one AI project you wish you could finish by the end of the term?
+5. What worries you about AI? In historical research, or anywhere else.
 
-The fourth question is the one to spend time on. Do not trim it down to what you
-think your current skills allow.
+The last two are the ones to spend time on. Do not trim the fourth down to what
+you think your current skills allow, and do not soften the fifth into what you
+think a course on critical digital history wants to hear.
 
 Commit the file and push it to your own GitHub account. Be ready to talk through
 it in class.

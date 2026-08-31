@@ -1,0 +1,45 @@
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# JavaScript/TypeScript
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local generated artifacts
+playgrounds/
+
+# Project artifacts are usually large, generated, or locally rebuilt.
+projects/*/artifacts/**
+!projects/*/artifacts/
+!projects/*/artifacts/README.md
+
+# Local databases should be reproducible from sources/code or exported
+# deliberately as smaller text artifacts.
+*.sqlite
+*.sqlite3
+*.db
+*.duckdb

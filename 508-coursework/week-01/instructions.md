@@ -33,13 +33,21 @@ order to use it.
 
 Clone your fork, not the course repository.
 
-### 2. Start a project and push it back
+### 2. Introduce yourself, and push it back
 
-In your fork, start a new project from `templates/project_template/`. Any idea
-you like, and a simple one is fine. Write it up as a short document in the
-project, commit, and push it to your own GitHub account.
+In your fork, make a folder `assignments/week-01/` and write a file in it called
+`self-introduction.md`. Four questions, one short paragraph each:
 
-Be ready to show it in class.
+1. A short introduction of yourself, including where you were before this programme.
+2. What do you study, and what interests you in it?
+3. What do you hope to do with AI?
+4. Do not worry about whether it is realistic. What is one AI project you wish you could finish by the end of the term?
+
+The fourth question is the one to spend time on. Do not trim it down to what you
+think your current skills allow.
+
+Commit the file and push it to your own GitHub account. Be ready to talk through
+it in class.
 
 ### 3. Learn the GitHub interface
 
@@ -52,6 +60,6 @@ the first two challenges. Commit it to your fork as `questions.md`.
 
 ## Bring to class
 
-Your fork on your laptop, the project you pushed, and your `questions.md`. What
+Your fork on your laptop, the introduction you pushed, and your `questions.md`. What
 stayed unclear is where we will start. If something breaks, stop after thirty
 minutes and bring the error.

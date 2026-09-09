@@ -12,7 +12,12 @@ AI and Digital Humanities Overview · 2026F · Bo An
 
 We will use AI to address real historical and humanities research needs. Each week, you will build something small, examine what it does, and explain the judgments behind it. The course will develop in response to your interests and the problems you encounter.
 
-## Why this course, now?
+## Why this course?
+
+Use AI to address real research needs and develop the ability to do work that
+matters to you.
+
+## Why now?
 
 AI is becoming part of research work. Learning to use it is part of maintaining our ability to do that work well. Bo treats the advances since November 2025 as a turning point in his own practical work; we will examine what current systems can actually do with concrete examples.
 
@@ -24,17 +29,10 @@ Software engineers are learning new ways to work with AI, too. Stanford's [CS146
 - **Agentic work:** giving an AI agent a task it can pursue using tools, with appropriate checks.
 - **Orchestration:** coordinating tasks, tools, and checks across a larger workflow.
 
-## Why critical? Informed critique
+## Why informed judgment?
 
-Critique should be grounded in experience and evidence. Every assignment includes reflection:
-
-1. What did you try, and what actually happened?
-2. What questions did you ask? How did you respond to questions about your work?
-3. Where did the material, tool, or answer fail?
-4. How did you **mitigate** the problem—reduce its likelihood or impact—and check again?
-5. What remains uncertain?
-
-A statement such as “AI makes mistakes” is a starting point. Show a specific mistake, explain why it matters, and test a possible improvement.
+Using AI—and predicting what AI can do—requires informed judgment. We will
+practise that judgment through weekly projects and workshops.
 
 ## About Bo An
 
@@ -48,9 +46,21 @@ Bo is a historian of computing, media, and modern China. His Yale PhD examined t
 - **Accumulate a workflow:** use the weekly work to develop skills and components toward your final project and capstone. Every task need not directly become part of the final project.
 - **A workshop in every class:** everyone must engage. An attempt, a careful test, a useful question, or helping diagnose a problem can make your participation visible.
 
+### Informed critique in every workshop
+
+Critique should be grounded in experience and evidence. In weekly projects and workshops, reflect on your work:
+
+1. What did you try, and what actually happened?
+2. What questions did you ask? How did you respond to questions about your work?
+3. Where did the material, tool, or answer fail?
+4. How did you **mitigate** the problem—reduce its likelihood or impact—and check again?
+5. What remains uncertain?
+
+A statement such as “AI makes mistakes” is a starting point. Show a specific mistake, explain why it matters, and test a possible improvement.
+
 ## Assessment
 
-We use the same assessment distribution as DHG501:
+Assessment distribution:
 
 | Component | Weight |
 |---|---:|
@@ -62,16 +72,14 @@ We use the same assessment distribution as DHG501:
 
 Workshop engagement contributes to participation. Active participation is essential for A+ work; attendance alone does not demonstrate engagement.
 
-### Final assignment: choose one route
+### Final assignment: an AI project + post-mortem
 
-- **Project route:** a digital project with a **4-page companion paper**, approximately **1,200 words**, explaining its purpose, methods, results, and public or scholarly significance.
-- **Paper route:** an **8-page digital history research paper**, approximately **2,500 words**.
+Build an AI project around a research need that matters to you and demonstrate
+what it does. Accompany it with a **post-mortem**: an account of what worked,
+what failed, what you changed, and what you learned.
 
-The standalone research paper is optional: it is one of the two routes. The project route still includes its shorter companion paper. Your project may develop a research interest, contribute to another course's research, or serve as a small trial for a capstone.
-
-One possible paper topic is **how a system answers a research question**: follow its sources, retrieval or OCR, model output, and answer; test examples; identify assumptions and blind spots; and explain how an improvement could be evaluated.
-
-Start with the project you most want to build, even if you do not yet know how. We will work out a feasible scope together. Submission dates will be announced separately.
+We will discuss your project ideas together. Bo will provide the detailed
+project brief later, including the submission requirements and deadline.
 
 ## Session One: where the overview takes us
 

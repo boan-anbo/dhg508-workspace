@@ -1,0 +1,196 @@
+<div lang="en" style="max-width: 960px; margin: 0 auto; line-height: 1.65;">
+<h1>DHG508 · Session One</h1>
+<p><strong>Critical Digital History</strong></p>
+<p><strong>Hands-on Critical AI for Historians</strong></p>
+<p>AI and Digital Humanities Overview · 2026F · Bo An</p>
+<p><a href="https://dh-tools.com/slides/2026F/508/1/">Open the course slides</a> · <a href="https://github.com/boan-anbo/dhg508-workspace">Course workspace</a></p>
+<h2>About this course</h2>
+<p>We will use AI to address real historical and humanities research needs. Each week, you will build something small, examine what it does, and explain the judgments behind it. The course will develop in response to your interests and the problems you encounter.</p>
+<h2>Why this course, now?</h2>
+<p>AI is becoming part of research work. Learning to use it is part of maintaining our ability to do that work well. Bo treats the advances since November 2025 as a turning point in his own practical work; we will examine what current systems can actually do with concrete examples.</p>
+<p>Two dated milestones are Google's <a href="https://blog.google/products-and-platforms/products/gemini/gemini-3/">Gemini 3 announcement, 18 November 2025</a> and Anthropic's <a href="https://www.anthropic.com/news/claude-opus-4-5">Claude Opus 4.5 announcement, 24 November 2025</a>. These are developers' reports about their systems, not a substitute for testing our research tasks.</p>
+<p>Software engineers are learning new ways to work with AI, too. Stanford's <a href="https://themodernsoftware.dev/">CS146S: The Modern Software Developer</a> combines practical work with coding agents and attention to their limitations. Our course addresses historical research needs while developing related skills:</p>
+<ul>
+<li><strong>Workflow:</strong> a sequence of steps connecting a research question, sources, and a result.</li>
+<li><strong>Agentic work:</strong> giving an AI agent a task it can pursue using tools, with appropriate checks.</li>
+<li><strong>Orchestration:</strong> coordinating tasks, tools, and checks across a larger workflow.</li>
+</ul>
+<h2>Why critical? Informed critique</h2>
+<p>Critique should be grounded in experience and evidence. Every assignment includes reflection:</p>
+<ol>
+<li>What did you try, and what actually happened?</li>
+<li>What questions did you ask? How did you respond to questions about your work?</li>
+<li>Where did the material, tool, or answer fail?</li>
+<li>How did you <strong>mitigate</strong> the problem—reduce its likelihood or impact—and check again?</li>
+<li>What remains uncertain?</li>
+</ol>
+<p>A statement such as “AI makes mistakes” is a starting point. Show a specific mistake, explain why it matters, and test a possible improvement.</p>
+<h2>About Bo An</h2>
+<p>Bo is a historian of computing, media, and modern China. His Yale PhD examined the history of computing in China, 1949–2000. His research experience includes Harvard's Fairbank Center and Microsoft Research's FATE group. He also builds research software; this course connects historical inquiry with that practical work.</p>
+<h2>How the course works</h2>
+<ul>
+<li><strong>One mini-project each week:</strong> usually using AI to make a small program or do a useful research task.</li>
+<li><strong>Show and discuss next class:</strong> bring your result, explain your process, and respond to questions.</li>
+<li><strong>Build progressively:</strong> begin with sample data, then work with your own sources.</li>
+<li><strong>Accumulate a workflow:</strong> use the weekly work to develop skills and components toward your final project and capstone. Every task need not directly become part of the final project.</li>
+<li><strong>A workshop in every class:</strong> everyone must engage. An attempt, a careful test, a useful question, or helping diagnose a problem can make your participation visible.</li>
+</ul>
+<h2>Assessment</h2>
+<p>We use the same assessment distribution as DHG501:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th style="text-align:right">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Class participation and discussion</td>
+<td style="text-align:right">20%</td>
+</tr>
+<tr>
+<td>Weekly assignments</td>
+<td style="text-align:right">30%</td>
+</tr>
+<tr>
+<td>Final project presentation</td>
+<td style="text-align:right">10%</td>
+</tr>
+<tr>
+<td>Final project</td>
+<td style="text-align:right">40%</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align:right"><strong>100%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Workshop engagement contributes to participation. Active participation is essential for A+ work; attendance alone does not demonstrate engagement.</p>
+<h3>Final assignment: choose one route</h3>
+<ul>
+<li><strong>Project route:</strong> a digital project with a <strong>4-page companion paper</strong>, approximately <strong>1,200 words</strong>, explaining its purpose, methods, results, and public or scholarly significance.</li>
+<li><strong>Paper route:</strong> an <strong>8-page digital history research paper</strong>, approximately <strong>2,500 words</strong>.</li>
+</ul>
+<p>The standalone research paper is optional: it is one of the two routes. The project route still includes its shorter companion paper. Your project may develop a research interest, contribute to another course's research, or serve as a small trial for a capstone.</p>
+<p>One possible paper topic is <strong>how a system answers a research question</strong>: follow its sources, retrieval or OCR, model output, and answer; test examples; identify assumptions and blind spots; and explain how an improvement could be evaluated.</p>
+<p>Start with the project you most want to build, even if you do not yet know how. We will work out a feasible scope together. Submission dates will be announced separately.</p>
+<h2>Session One: where the overview takes us</h2>
+<p>The overview retains three questions:</p>
+<ol>
+<li>Why do historians need computers?</li>
+<li>What can historians do with computers and AI?</li>
+<li>How can you work like a historian in the age of AI?</li>
+</ol>
+<p>After the overview, we return to the connection between <strong>a research question, a workflow, and informed critique</strong>.</p>
+<h3>FAQ and tool check — about 20 minutes</h3>
+<ul>
+<li><strong>5 minutes:</strong> collect questions from your <code>questions.md</code>.</li>
+<li><strong>8 minutes:</strong> check OpenCode, VS Code, your GitHub account, and your cloned fork.</li>
+<li><strong>7 minutes:</strong> a volunteer demonstrates a task, and we examine any unclear steps or errors.</li>
+</ul>
+<p>Keep unresolved questions for the course log. Bring the exact step and error when something does not work.</p>
+<h3>Live workshop</h3>
+<p>Bo will use a current model to investigate a question with the class. Everyone will inspect the output against the source, identify a blind spot, and try a change to the process. We will record the prompt, model, result, correction, and remaining uncertainty.</p>
+<p><strong>The live demonstration record will be added after class.</strong> The prompts and outcomes below are fields to complete, not a report of an experiment already performed.</p>
+<table>
+<thead>
+<tr>
+<th>Record</th>
+<th>To fill in during or after the workshop</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Research question and source</td>
+<td>Question; source reference; page or image identifier</td>
+</tr>
+<tr>
+<td>Model and tools</td>
+<td>Model name/version displayed; date; tool used</td>
+</tr>
+<tr>
+<td>Prompt and task</td>
+<td>Exact prompt or link to the saved session</td>
+</tr>
+<tr>
+<td>What happened</td>
+<td>Output or an excerpt linked to the original log</td>
+</tr>
+<tr>
+<td>Check against the source</td>
+<td>Evidence supporting or contradicting the output</td>
+</tr>
+<tr>
+<td>Blind spot and mitigation</td>
+<td>What failed; what changed; what happened on retest</td>
+</tr>
+<tr>
+<td>Remaining questions</td>
+<td>Uncertainty and the next check to perform</td>
+</tr>
+</tbody>
+</table>
+<p>Before sharing a log, remove passwords, API keys, and personal material that does not belong in the class record. Preserve the source and your checks so classmates can understand the result.</p>
+<h2>For next week: a small question and sources that need OCR</h2>
+<ol>
+<li>Choose a small research question connected to your interests. For example: <strong>When was an institution founded, and what does the evidence actually establish?</strong> You do not need to use the same subject as the classroom demonstration.</li>
+<li>Find material in the library or an online library database.</li>
+<li>Use material that <strong>needs OCR</strong>: a scanned page, a photograph, or an image of text.</li>
+<li>Use <strong>OpenCode</strong> to investigate your question with that material.</li>
+<li>Check the OCR and the resulting claim against the original page.</li>
+<li>Bring your findings to the next class and explain how you assessed the material.</li>
+</ol>
+<p>Show your research question, where the source came from, the original page beside its OCR text, how you used OpenCode, what you checked or corrected, and what remains uncertain. A result with clearly explained limits is useful work.</p>
+<h2>Next session: OCR</h2>
+<p><strong>How do we get AI to read a source?</strong> We will move from a shared sample to your own material and examine how recognition errors affect research claims.</p>
+<p>The following is our planned three-hour sequence; workshop pacing may adjust to the questions you bring.</p>
+<table>
+<thead>
+<tr>
+<th>Elapsed time</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00:00–00:30</td>
+<td>Student mini-project demonstrations and questions</td>
+</tr>
+<tr>
+<td>00:30–00:50</td>
+<td>From an image to text: what OCR must recognise</td>
+</tr>
+<tr>
+<td>00:50–01:15</td>
+<td>Guided workshop with sample data</td>
+</tr>
+<tr>
+<td>01:15–01:25</td>
+<td>Break</td>
+</tr>
+<tr>
+<td>01:25–01:50</td>
+<td>Compare errors and their effects on interpretation</td>
+</tr>
+<tr>
+<td>01:50–02:20</td>
+<td>Apply and check the workflow on your own material</td>
+</tr>
+<tr>
+<td>02:20–02:30</td>
+<td>Break</td>
+</tr>
+<tr>
+<td>02:30–02:50</td>
+<td>Show a mitigation, retest, and discuss</td>
+</tr>
+<tr>
+<td>02:50–03:00</td>
+<td>Save the workflow and identify the next research step</td>
+</tr>
+</tbody>
+</table>
+<p>Bring original page images, OCR output, your question, and notes on what you checked.</p>
+</div>

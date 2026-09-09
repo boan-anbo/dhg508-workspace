@@ -117,16 +117,18 @@ Bo will use a current model to investigate a question with the class. Everyone w
 
 Before sharing a log, remove passwords, API keys, and personal material that does not belong in the class record. Preserve the source and your checks so classmates can understand the result.
 
-## For next week: a small question and sources that need OCR
+## For next week: a historical question, two sources, and OCR
 
-1. Choose a small research question connected to your interests. For example: **When was an institution founded, and what does the evidence actually establish?** You do not need to use the same subject as the classroom demonstration.
-2. Find material in the library or an online library database.
-3. Use material that **needs OCR**: a scanned page, a photograph, or an image of text.
-4. Use **OpenCode** to investigate your question with that material.
-5. Check the OCR and the resulting claim against the original page.
-6. Bring your findings to the next class and explain how you assessed the material.
+Use OpenCode to answer a historical question about anything **before 1950**.
+Find at least **two pieces of evidence from two credible sources** on the open
+Internet or in academic databases. At least one source must need OCR.
 
-Show your research question, where the source came from, the original page beside its OCR text, how you used OpenCode, what you checked or corrected, and what remains uncertain. A result with clearly explained limits is useful work.
+Try an LLM API (OpenRouter or DeepSeek) first, then PaddleOCR if needed, and
+OpenCode's own vision capabilities as a last resort. Check the text against
+the original, and explain why the evidence supports your answer.
+
+Follow the [Week 2 instructions](https://github.com/boan-anbo/dhg508-workspace/blob/main/508-coursework/week-02/instructions.md)
+for the examples, API guides, and what to bring to class.
 
 ## Next session: OCR
 

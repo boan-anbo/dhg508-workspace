@@ -7,3 +7,4 @@ Instructions go up before the class they belong to. Read the current week before
 you come.
 
 - [week-01](week-01/instructions.md) setup, and your first clone
+- [week-02](week-02/instructions.md) a historical question, two sources, and OCR

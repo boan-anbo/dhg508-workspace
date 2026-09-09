@@ -1,6 +1,8 @@
 # DHG508 Critical Digital History: Hands-on Critical AI for Historians
 
-Start here: [Week 1, what to do before class on Wednesday, 9 September](508-coursework/week-01/instructions.md)
+Current assignment: [Week 2 — a historical question, two sources, and OCR](508-coursework/week-02/instructions.md)
+
+Getting started: [Week 1 — setup and your first project](508-coursework/week-01/instructions.md)
 
 Course workspace, Term 1 2026-27. You will fork this repository and work in your own copy.
 
@@ -12,4 +14,5 @@ Course workspace, Term 1 2026-27. You will fork this repository and work in your
 - `AGENTS.md` the rules an agent follows inside this workspace
 - `WORKSPACE.md` how the pieces fit together and how to start a project
 
-Nothing else here needs to be read before Wednesday. Do the week 1 instructions, and we will open the rest together in class.
+Read the current week’s instructions before class. If you are setting up for
+the first time, start with Week 1.

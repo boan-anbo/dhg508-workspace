@@ -1,42 +1,77 @@
-# Week 2 · OCR
+# Week 2
 
-## Research task
+Before our next class.
 
-Choose a small question related to your interests. Find a source in the library
-or an online library database that **requires OCR**: a scanned page, photograph,
-or image of text. Use **OpenCode** to investigate the question with that source.
+## Tasks
 
-For example, ask when an institution was founded and what the source actually
-establishes. Your subject can be entirely different from the classroom example.
+Use your own fork of the course workspace. Ask OpenCode to help you bring it up
+to date and open it in VS Code.
 
-Work in your own fork. Use a project in `projects/` for the research. Preserve
-original files in `sources/raw/`; put OCR and corrected text in
-`sources/processed/`. Keep your analysis in `research/`. Follow the workspace
-instructions rather than changing the project template itself.
+For LLM-based OCR, use one of these APIs. Give OpenCode the official guide and
+ask it to help you use a model that accepts images:
 
-## Bring to the next class
+- OpenRouter: https://openrouter.ai — [image-input guide](https://openrouter.ai/docs/guides/overview/multimodal/image-understanding)
+- DeepSeek: https://platform.deepseek.com — [vision API guide](https://api-docs.deepseek.com/guides/vision/)
 
-- Your research question and why it interests you.
-- The source reference and original page image.
-- OCR output beside the original, with any corrections explained.
-- How you used OpenCode and what the research result is.
-- Your judgment: what the material supports, what you checked, and what remains
-  uncertain.
+## Challenges
 
-Demonstrate what you did and be ready to answer questions. Each assignment
-includes reflection on a concrete problem and an attempted mitigation. Do not
-present unverified OCR text as a verified quotation.
+Do these through OpenCode. Tell it what you want to find out and ask it to
+explain what it is doing. Check its work against your sources.
 
-## Session plan
+### 1. Choose a historical question
 
-1. Demonstrations and questions — 30 minutes.
-2. How OCR reads an image — 20 minutes.
-3. Guided workshop with sample data — 25 minutes.
-4. Break — 10 minutes.
-5. Compare errors and their interpretive consequences — 25 minutes.
-6. Work with your own material — 30 minutes.
-7. Break — 10 minutes.
-8. Show a mitigation and retest — 20 minutes.
-9. Save your workflow and next steps — 10 minutes.
+Answer one question about anything **before 1950**, preferably connected to
+your interests. For example:
 
-Total: 180 minutes. Workshop pacing may adjust to the questions in class.
+- When was Lingnan University founded?
+- When did Peking University first admit women?
+- When did the first railway in China begin operating?
+
+### 2. Find two pieces of evidence
+
+Find **at least two pieces of evidence from two credible sources**, using the
+open Internet or academic databases. Keep the links or references.
+
+**Evaluate the evidence, not just the website.** “PKU's website says so” is not
+sufficient evidence by itself. Find the records or documents supporting the
+claim and explain why they support your answer. Does “admitting women,” for
+example, mean allowing them to attend classes or formally enrolling them?
+
+### 3. OCR at least one source
+
+At least **one source must need OCR**: a scan or photograph whose text has not
+yet been converted into machine-readable text.
+
+Ask OpenCode to help you try these methods **in this order**:
+
+1. **Start with an LLM API:** OpenRouter or DeepSeek, using the guides above.
+2. **Then try the PaddleOCR API** if the first result needs improvement.
+3. **As a last resort, use OpenCode's own vision capabilities.**
+
+You do not need to try all three if an earlier method works well. Check the
+output against the original image. If you try more than one method, compare
+the results and choose the one that works best for your source. Use the
+checked text to support your answer.
+
+### 4. Save your work and push it back
+
+In your fork, create `assignments/week-02/answer.md`. Keep it short: your
+question and answer, your two pieces of evidence and why they are reliable,
+and how you did the OCR—including any useful tricks or problems.
+
+Use a project under `projects/` for your research (see the
+[workspace guide](../../WORKSPACE.md)). Keep its original source images
+unchanged in `sources/raw/` and the OCR text in `sources/processed/`. Link to
+these from your answer so you can show them in class.
+
+Commit your answer and small supporting files, then push to your own GitHub
+account. Keep large files and API keys out of Git. Add unresolved questions
+to your existing `questions.md`.
+
+## Bring to class
+
+Be ready to:
+
+1. **Tell us your question and your answer.**
+2. **Show your two pieces of evidence** and explain why you consider the sources reliable.
+3. **Explain how you OCRed at least one source.** Show the original and the OCR result, explain which method you used, and share any useful tricks or problems you encountered.

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Which building is this?</title>
+<style>
+  :root { --bg: #0b0b0d; --line: #26262b; --ink: #f4f4f5; --dim: #8b8b94; --accent: #ef4444; --amber: #f5b454; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: radial-gradient(1200px 600px at 50% -10%, #1c1c22, var(--bg)); color: var(--ink);
+         font: 16px/1.5 "Avenir Next", "PingFang SC", system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; }
+  header { width: min(980px, 92vw); padding: 36px 0 18px; display: flex; justify-content: space-between; align-items: baseline; }
+  h1 { font-size: 26px; font-weight: 700; letter-spacing: -.3px; margin: 0; }
+  h1 span { color: var(--accent); }
+  .tag { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--dim); }
+  main { width: min(980px, 92vw); }
+  #drop { border: 1.5px dashed #3a3a42; border-radius: 18px; min-height: 360px; display: grid; place-items: center; text-align: center;
+          transition: border-color .2s, background .2s; cursor: pointer; position: relative; overflow: hidden; }
+  #drop.over { border-color: var(--accent); background: rgba(239,68,68,.06); }
+  #drop .hint { color: var(--dim); }
+  #drop .hint b { color: var(--ink); font-size: 22px; font-weight: 600; display: block; margin-bottom: 6px; }
+  #drop img { max-width: 100%; max-height: 420px; border-radius: 12px; display: block; }
+  .scan { position: absolute; left: 0; right: 0; height: 90px; top: -90px;
+          background: linear-gradient(180deg, transparent, rgba(239,68,68,.35), transparent); animation: scan 1.1s ease-in-out infinite; }
+  @keyframes scan { to { top: 100%; } }
+  #result { display: none; margin-top: 26px; border: 1px solid var(--line); border-radius: 18px; padding: 26px;
+            grid-template-columns: 260px 1fr; gap: 28px; background: rgba(255,255,255,.02); animation: rise .45s ease-out; }
+  @keyframes rise { from { opacity: 0; transform: translateY(12px); } }
+  #result img { width: 100%; border-radius: 10px; filter: grayscale(.2); }
+  .name { font-size: 40px; font-weight: 700; letter-spacing: -.5px; line-height: 1.1; }
+  .eng { color: var(--dim); font-size: 18px; margin-top: 4px; }
+  .year { display: inline-block; margin-top: 12px; font-size: 14px; padding: 3px 10px; border: 1px solid var(--line); border-radius: 99px; }
+  .bar { height: 6px; background: var(--line); border-radius: 99px; margin: 18px 0 6px; overflow: hidden; }
+  .bar i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .9s ease-out; }
+  .small { font-size: 13px; color: var(--dim); }
+  .history { margin-top: 14px; font-size: 15px; color: #d4d4d8; }
+  .note { margin-top: 12px; font-size: 14px; color: var(--amber); }
+  .src { margin-top: 12px; font-size: 12px; color: var(--dim); }
+  .badge { font-size: 11px; letter-spacing: .15em; text-transform: uppercase; color: var(--amber); border: 1px solid #5a4520; border-radius: 99px; padding: 2px 8px; }
+  footer { margin: 34px 0; font-size: 12px; color: #55555d; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Which <span>Lingnan</span> building is this?</h1>
+  <div class="tag">drop · paste · click</div>
+</header>
+<main>
+  <div id="drop">
+    <div class="hint"><b>Drop an old photo here</b>or paste it (⌘V), or click to choose</div>
+    <input id="file" type="file" accept="image/*" hidden>
+  </div>
+
+  <section id="result">
+    <img id="archive" alt="archive photo">
+    <div>
+      <div class="small">Best match <span class="badge" id="badge"></span></div>
+      <div class="name" id="name"></div>
+      <div class="eng" id="eng"></div>
+      <div class="year" id="year"></div>
+      <div class="bar"><i id="conf"></i></div>
+      <div class="small" id="reason"></div>
+      <div class="history" id="history"></div>
+      <div class="note" id="note"></div>
+      <div class="src" id="src"></div>
+    </div>
+  </section>
+</main>
+<footer>browser → server.py → model → buildings.db</footer>
+
+<script>
+const drop = document.getElementById('drop'), file = document.getElementById('file');
+const $ = id => document.getElementById(id);
+
+drop.onclick = () => file.click();
+file.onchange = () => file.files[0] && identify(file.files[0]);
+drop.ondragover = e => { e.preventDefault(); drop.classList.add('over'); };
+drop.ondragleave = () => drop.classList.remove('over');
+drop.ondrop = e => { e.preventDefault(); drop.classList.remove('over'); e.dataTransfer.files[0] && identify(e.dataTransfer.files[0]); };
+document.onpaste = e => { const f = [...e.clipboardData.files][0]; f && identify(f); };
+
+async function identify(image) {
+  // 1. show the photo, with a scanning line
+  drop.innerHTML = `<img src="${URL.createObjectURL(image)}"><div class="scan"></div>`;
+  $('result').style.display = 'none';
+
+  // 2. send it to our own server
+  const res = await fetch('/api/identify', { method: 'POST', headers: { 'Content-Type': image.type }, body: image });
+  const { model, building } = await res.json();
+  await new Promise(r => setTimeout(r, 900));          // let the scan run a moment
+  drop.querySelector('.scan')?.remove();
+
+  // 3. show what came back
+  if (!building) { $('result').style.display = 'grid'; $('name').textContent = 'No match'; return; }
+  $('archive').src = '/archive/' + building.image;
+  $('name').textContent = building.name_chn;
+  $('eng').textContent = building.name_eng;
+  $('year').textContent = building.year || 'year unknown';
+  $('reason').textContent = model.reason;
+  $('history').textContent = building.history;
+  $('note').textContent = building.note ? '⚠ ' + building.note : '';
+  $('src').textContent = 'Row ' + building.id + ' · ' + building.source;
+  $('badge').textContent = 'model: ' + model.source;
+  $('result').style.display = 'grid';
+  requestAnimationFrame(() => $('conf').style.width = Math.round(model.confidence * 100) + '%');
+}
+</script>
+</body>
+</html>

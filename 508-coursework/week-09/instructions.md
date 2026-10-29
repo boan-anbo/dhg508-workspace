@@ -6,7 +6,7 @@ Prepare for the next class on **Wednesday 4 November 2026**.
 
 Situate your AI design in relevant scholarship and make it explainable: show what you designed, explain the reasoning behind its choices and their historical and/or cultural implications, and discuss how your work contributes to a scholarly conversation. Be prepared to explain your technical choices as well.
 
-Present your work in **ten minutes**, showing its design one part at a time: for example, plot, graphics, game mechanics, characters, environment, or the parts relevant to your own project. Use **Reslides**, our React slide tool, as the medium for your presentation; learning to use it is also part of the exercise. You can embed a webpage you have made. Reslides access and setup details will be supplied separately.
+Present your work in **ten minutes**, showing its design one part at a time: for example, plot, graphics, game mechanics, characters, environment, or the parts relevant to your own project. Use **[DAIHUM Reslides](https://github.com/boan-anbo/reslides)**, our React slide tool, as the medium for your presentation; learning to use it is also part of the exercise. You can embed a webpage you have made. See the [DAIHUM Reslides repository](https://github.com/boan-anbo/reslides) for macOS and Windows setup (`git clone https://github.com/boan-anbo/reslides.git && cd reslides && npm run setup && npm run dev`, or ask OpenCode to set it up for you), editing `examples/starter/slides.md`, embedding webpages with `<iframe>`, and rehearsing with Presenter Mode (`/#/presenter/`).
 
 For each part, explain:
 
@@ -41,7 +41,7 @@ Use the same curiosity to learn your **technical stack**: ask agents to help you
 
 將你的 AI 設計放進相關的學術討論，並讓它能夠被清楚理解：展示你設計了甚麼，解釋各項選擇背後的思考及其歷史和／或文化意義，並討論你的作品如何對學術對話作出貢獻。你也需要能夠解釋自己的技術選擇。
 
-請準備一個**十分鐘展示**，逐一展示設計的各個部分，例如情節、畫面、遊戲機制、角色、環境，或其他與你的專案相關的部分。展示使用我們的 React 投影片工具 **Reslides**；學習使用這個工具也是本次練習的一部分。你也可以嵌入自己製作的網頁。Reslides 的使用與設定方式會另行提供。
+請準備一個**十分鐘展示**，逐一展示設計的各個部分，例如情節、畫面、遊戲機制、角色、環境，或其他與你的專案相關的部分。展示使用我們的 React 投影片工具 **[DAIHUM Reslides](https://github.com/boan-anbo/reslides)**；學習使用這個工具也是本次練習的一部分。你也可以嵌入自己製作的網頁。請參閱 [DAIHUM Reslides 儲存庫](https://github.com/boan-anbo/reslides)了解 macOS 與 Windows 的安裝及使用方法（可執行 `git clone https://github.com/boan-anbo/reslides.git && cd reslides && npm run setup && npm run dev`，或直接請 OpenCode 幫你安裝與啟動），包括編輯 `examples/starter/slides.md`、以 `<iframe>` 嵌入互動網頁，以及使用講者模式（`/#/presenter/`）計時與排練。
 
 對每一個部分，請說明：
 

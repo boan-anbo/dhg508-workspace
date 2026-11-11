@@ -14,9 +14,9 @@ Built with [DAIHUM Reslides](https://github.com/boan-anbo/reslides) (`theme: exh
 - **Validate syntax, citations, figures, and timing:** `RESLIDES=/path/to/reslides npm run check`
 - **Build static deck + reading edition:** `RESLIDES=/path/to/reslides npm run build` → `dist/` and `dist/read/`
 
-## Structure (65 slides · 70 minutes)
+## Structure (64 slides · 70 minutes)
 
-1. **Autonomous `/goal` & Planning (`s01`–`s04`)**: *Saltline* embedded Three.js run (`public/demos/saltline.html`), OpenCode PR `#59437` `/goal` architecture (`idle` hook + internal reviewer), writing concrete `/goal` statements, locking `docs/plan.md` in `Plan` mode (`Tab`) to prevent goal drift, and the two-phase feedback loop map.
+1. **Autonomous `/goal` & Planning (`s01`–`s04`)**: OpenCode PR `#59437` `/goal` architecture (`idle` hook + internal reviewer), writing concrete `/goal` statements, locking `docs/plan.md` in `Plan` mode (`Tab`) to prevent goal drift, and the two-phase feedback loop map.
 2. **Phase 01 · Ideation Loop Before Code (`m1-01`–`m1-07`)**: Verbal restatement + open questions in `Plan` mode, rendered Mermaid state machines (*Bashan*), agent-drawn Excalidraw floor plans & sections (*Virtual Museum of Chinese Computing*, `mcp-excalidraw-server` / `mcp.excalidraw.com`), live embedded Excalidraw canvas, and self-contained HTML architecture schematics (`nicobailon/visual-explainer`).
 3. **Phase 02A · Agent ↔ Agent Coordination (`m2-01`–`m2-06`)**: Built-in OpenCode subagents (`.opencode/agents/researcher.md`), **MCP Agent Mail** (`Dicklesworthstone/mcp_agent_mail_rust`), and **agentchattr** (`bcurts/agentchattr`), while keeping `design-document.md` and `data/bashan-evidence.csv` in Git as the permanent source of truth.
 4. **Phase 02B · Browser & Compile Feedback (`m3-01`–`m3-10`)**: `@playwright/mcp` two-step setup, exploratory browser observation vs. repeatable Playwright browser tests, and `0.15s` Python static gates (`compileall` + `ruff` + `mypy` + `pytest`).

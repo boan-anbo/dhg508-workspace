@@ -1,9 +1,3 @@
-saltline-preview:
-  file: images/saltline-preview.svg
-  alt: Architectural diagram of Saltline showing a rainy container port at 05:42, Gull drone, Hound unit, red-dot reticle, and Three.js single-file HTML HUD.
-  caption: Saltline · Single-file Three.js FPS
-  credit: Course diagram
-  rights: public
 vmocc-draft15:
   file: images/vmocc-draft15-landform.svg
   alt: Excalidraw Draft 15 top-down contour plan and 1m=1.8px longitudinal section of the 320-meter Virtual Museum of Chinese Computing.

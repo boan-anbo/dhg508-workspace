@@ -13,10 +13,9 @@ editions:
     list:
       - { slide: s01-cover, minutes: 0.5 }
       - { slide: s02-today, minutes: 1 }
-      - { slide: s03c-saltline-play, minutes: 1.5 }
-      - { slide: s03d-goal-how, minutes: 1.5 }
-      - { slide: s03e-goal-statement, minutes: 1.5 }
-      - { slide: s03f-plan-drift, minutes: 1.5 }
+      - { slide: s03d-goal-how, minutes: 2 }
+      - { slide: s03e-goal-statement, minutes: 2 }
+      - { slide: s03f-plan-drift, minutes: 2 }
       - { slide: s03-why-verify, minutes: 1 }
       - { slide: s04-three-loops, minutes: 1 }
       - { slide: m1-01-sec, minutes: 0.5 }

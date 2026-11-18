@@ -1,11 +1,11 @@
 % ============================================================================
-% DHG508 Final Design Paper & Post-Mortem (Simplified Overleaf Template)
+% DHG508 Final Design Paper & Post-Mortem (Overleaf Template)
 % Lingnan University — Critical Digital History
 %
 % OVERLEAF SETUP:
 %   1. Upload dhg508-overleaf-template.zip to Overleaf (New Project -> Upload Project)
-%   2. Click Menu (top left) -> Compiler -> select XeLaTeX
-%   3. Click Recompile (Biber runs automatically for Chicago footnotes & bibliography)
+%   2. Menu (top left) -> Compiler -> XeLaTeX
+%   3. Click Recompile
 % ============================================================================
 
 \documentclass[12pt,a4paper]{article}
@@ -54,56 +54,45 @@
 
 \begin{abstract}
 \noindent
-Replace this paragraph (100--150 words) with your own summary: state the historical
-or cultural question your project investigates, what a user does inside your
-application or simulation, how documented facts (\emph{据}), historical inferences
-(\emph{推断}), and design inventions (\emph{设}) are separated, and the main lesson
-from building and testing it with AI agents.
+State in 100--150 words: your historical or cultural question, what a user does
+in your project, how documented facts (\emph{据}), inferences (\emph{推断}), and
+design inventions (\emph{设}) are separated, and your main takeaway.
 \end{abstract}
 
 \onehalfspacing
 
-\section{Historical Question and Why This Medium Matters}
+\section{Historical Question and Medium}
 
-State your core historical or cultural question and your design question. Explain
-why an interactive simulation, database application, or spatial reconstruction
-teaches something that a static essay or film would not---for example, what a user
-discovers only by choosing, testing constraints, or navigating the space.
+State your historical or cultural question and explain why an interactive
+simulation or application is needed rather than a static essay or film.
 
-\section{Sources, Limits, and Scholarly Conversation}
+\section{Sources and Scholarly Conversation}
 
-Describe the primary sources your project rests on (with exact editions and page
-locators) and state their limits plainly (translation layers, OCR errors, missing
-voices, or archival gaps).\autocite[150, 152]{tobin1986macro} Use \verb|\autocite[page]{key}|
-after punctuation to generate Chicago footnotes automatically from \texttt{references.bib}.\autocite{conference1986}
+Describe your primary sources and their limits (edition, translation, OCR, or
+gaps).\autocite[150, 152]{tobin1986macro} Place \verb|\autocite[page]{key}| after
+punctuation to generate Chicago footnotes.\autocite{conference1986}
 
-Engage with \textbf{at least three scholarly works} relevant to your problem,
-explaining what those scholars argue, where they agree or disagree, and how your
-design choices respond to that conversation.\autocite[158--160]{gewirtz2017unlikely}
-Connect each scholarly work directly to a concrete mechanism, character rule, or
-data structure in your build.\autocite[195--199]{weber2021shock}
+Engage with \textbf{at least three scholarly works}, showing how your design
+responds to their arguments.\autocite[158--160]{gewirtz2017unlikely} Connect each
+work to a specific part of your build.\autocite[195--199]{weber2021shock}
 
-\section{System Architecture and Epistemic Boundaries}
+\section{Architecture and Boundaries}
 
-Explain how your system works end to end: how data (\texttt{.csv}/\texttt{.json})
-and rules are separated from UI or engine rendering, how live model calls (if any)
-are proxied safely via a Cloudflare Worker or pre-computed offline, and what hard
-temporal or epistemic cutoffs keep characters or outputs from drifting into
-anachronism.
+Explain how data (\texttt{.csv}/\texttt{.json}), rules, UI/engine, and Cloudflare
+deployment connect, and what temporal or epistemic cutoffs apply.
 
-% Uncomment the figure block below once you upload schematic.png alongside main.tex:
+% Uncomment after uploading schematic.png alongside main.tex:
 % \begin{figure}[htbp]
 %   \centering
 %   \includegraphics[width=0.92\textwidth]{schematic.png}
-%   \caption{Project architecture and interaction flow generated during ideation.}
+%   \caption{Project architecture and interaction flow.}
 %   \label{fig:schematic}
 % \end{figure}
 
-\section{Reproducible Evidence Table}
+\section{Evidence Table}
 
-Table~\ref{tab:evidence} is generated directly from \texttt{evidence.csv} by
-\texttt{make\_evidence\_table.py} so that your repository data and this paper share
-a single source of truth.
+Table~\ref{tab:evidence} is generated from \texttt{evidence.csv} by
+\texttt{make\_evidence\_table.py}.
 
 \begin{table}[htbp]
   \centering
@@ -111,35 +100,24 @@ a single source of truth.
   \singlespacing
   \renewcommand{\arraystretch}{1.25}
   \input{evidence-table.tex}
-  \caption{Core claims and design elements with locators, evidence tiers
-  (\emph{据} documented, \emph{推断} inferred, \emph{设} invented), and boundaries.}
+  \caption{Claims and design elements with locators, evidence tiers
+  (\emph{据} documented, \emph{推断} inferred, \emph{设} invented), and limits.}
   \label{tab:evidence}
 \end{table}
 
-\section{Automated Verification and External Playtesting}
+\section{Verification and Playtesting}
 
-Summarize what your automated test suite (\texttt{Vitest}/\texttt{pytest},
-\texttt{Playwright} E2E, and any log audit) checks across both software behaviour
-and historical constraints. Report what at least \textbf{two external users}
-experienced on your deployed URL, what broke or confused them, and which permanent
-regression tests you added so those issues cannot return.
+Summarize what your automated tests (\texttt{Vitest}/\texttt{pytest} and
+\texttt{Playwright}) verify, what at least \textbf{two external users} found on
+your live URL, and which regression tests you added.
 
-\section{Post-Mortem and Statement of AI Use}
+\section{Post-Mortem}
 
-Give a concrete, candid account grounded in your actual research journal and Git
-history:
 \begin{enumerate}
-  \item \textbf{What worked:} Which steps (search triage, schema refactoring,
-  schematic generation, Browser MCP debugging, test generation) genuinely helped?
-  \item \textbf{What failed or drifted:} Give specific examples of OCR mistakes,
-  goal drift, hallucinated citations, broken builds, or deployment snags, and how
-  you caught and resolved them.
-  \item \textbf{What changed:} How your current build differs from your initial
-  idea and why.
-  \item \textbf{What this work does \emph{not} claim:} Honest historical and
-  technical limits that remain open.
-  \item \textbf{AI disclosure:} Which models, agent harnesses, and MCP tools were
-  used at which stages, and how you verified every source and claim yourself.
+  \item \textbf{What worked:} Steps and tools that saved effort or caught bugs.
+  \item \textbf{What failed:} Concrete bugs, OCR errors, or model drift, and how you fixed them.
+  \item \textbf{What changed:} Key changes from your initial plan.
+  \item \textbf{Limits and AI tools:} Remaining historical/technical limits, and which models/tools were used.
 \end{enumerate}
 
 \singlespacing

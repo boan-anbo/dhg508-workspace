@@ -2,6 +2,8 @@
 
 Prepare for our final class on **Wednesday 25 November 2026**.
 
+**Session 11 slides & semester review:** [Reading edition (`slides/read/index.html`)](slides/read/index.html) · [Reslides deck (`slides/`)](slides/README.md)
+
 **Overleaf starter template:** [`dhg508-overleaf-template.zip`](dhg508-overleaf-template.zip) · Unpacked files: [`paper-template/`](paper-template/)
 
 **Mention your difficulties.**
@@ -83,6 +85,8 @@ Next Wednesday (**25 November**) is your **final hand-in**:
 # 第十一週 · 終版跑通、Overleaf 論文（`biblatex-chicago`）與 Post-Mortem
 
 請為 **2026 年 11 月 25 日（星期三）**的最後一堂課做好準備。
+
+**第十一講投影片與全學期複習包：** [閱讀版（`slides/read/index.html`）](slides/read/index.html) · [Reslides 課件源碼（`slides/`）](slides/README.md)
 
 **Overleaf 極簡模板：** [`dhg508-overleaf-template.zip`](dhg508-overleaf-template.zip) · 解壓文件：[`paper-template/`](paper-template/)
 

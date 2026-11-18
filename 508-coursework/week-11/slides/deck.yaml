@@ -7,14 +7,13 @@ routerMode: hash
 figures: figures.yaml
 editions:
   session-eleven:
-    minutes: 140
+    minutes: 135
     list:
       - { slide: s01-cover, minutes: 1 }
       - { slide: s02-today, minutes: 2 }
       - { slide: s03-showcase-board, minutes: 100 }
       - { slide: s04-sec-final, minutes: 1 }
       - { slide: s05-what-finished-means, minutes: 5 }
-      - { slide: s06-frontier-upgrade, minutes: 5 }
       - { slide: s07-single-source-route, minutes: 5 }
       - { slide: s08-overleaf-setup, minutes: 5 }
       - { slide: s09-biblatex-chicago, minutes: 5 }

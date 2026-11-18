@@ -25,7 +25,6 @@ minutes: 5
 1. Open your **live public URL**
 2. Show **`paper/design-paper.pdf`**
 3. Fix any remaining **final bug** together &amp; push
-4. Opt in with Bo if you want a **post-class upgrade**
 
 </div></div>
 </div>

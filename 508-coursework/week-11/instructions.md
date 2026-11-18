@@ -14,7 +14,6 @@ Next Wednesday (**25 November**) is your **final hand-in**:
 
 1. **End-to-end runnability is enough.** Freeze features now—do not start new modules. Make sure your live Cloudflare `https://` URL opens cleanly on another device, your automated tests (`Vitest`/`pytest` + `Playwright`) pass, and your design paper compiles to PDF on Overleaf.
 2. **Final bug clinic in class.** If one stubborn bug still blocks you, record the exact error and reproduction steps and bring it next Wednesday—we will fix it together before your final commit.
-3. **Optional post-class upgrade (outside grading).** If you want to push your project further over the coming weeks, tell Bo—Bo will help upgrade it using stronger frontier models. Post-class upgrades do **not** count toward your grade; grading rests strictly on your own sources (`据 / 推断 / 设`), tests, working build, and paper.
 
 ---
 
@@ -78,7 +77,7 @@ Next Wednesday (**25 November**) is your **final hand-in**:
     └── design-paper.pdf       # Compiled PDF
 ```
 
-**In class on Wednesday 25 November:** open your live public URL, show `paper/design-paper.pdf`, resolve any remaining final bug together if needed, and let Bo know if you want a post-class upgrade.
+**In class on Wednesday 25 November:** open your live public URL, show `paper/design-paper.pdf`, and resolve any remaining final bug together if needed.
 
 ---
 
@@ -98,7 +97,6 @@ Next Wednesday (**25 November**) is your **final hand-in**:
 
 1. **全鏈路跑通即可。** 本週封版不再加新功能，確保 Cloudflare 公開 `https://` 網址在其他設備正常運行、自動化測試（`Vitest`/`pytest` + `Playwright`）通過、並在 Overleaf 編譯出設計論文 PDF。
 2. **課堂排障兜底。** 如還剩個別修不掉的 Final Bug，記下完整報錯與重現步驟帶到下週課堂，當場一起修好再提交最終 commit。
-3. **課後可選高階模型升級（不計入成績）。** 若希望在課後幾週繼續打磨升級作品，可直接告訴 Bo，Bo 會用更高級的模型協助升級。升級部分**不計入課程分數**；評分完全基於你自己的史料依據（`據／推斷／設`）、測試、跑通版本與論文。
 
 ---
 
@@ -162,4 +160,4 @@ Next Wednesday (**25 November**) is your **final hand-in**:
     └── design-paper.pdf       # 編譯好的最終 PDF
 ```
 
-**11 月 25 日課堂安排：** 打開線上公開網址、展示 `paper/design-paper.pdf`、現場修掉剩餘 Final Bug（如有）即可完成提交；有意課後升級作品的同學直接告訴 Bo。
+**11 月 25 日課堂安排：** 打開線上公開網址、展示 `paper/design-paper.pdf`、現場修掉剩餘 Final Bug（如有）即可完成提交。

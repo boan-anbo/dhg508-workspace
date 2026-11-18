@@ -10,9 +10,9 @@
   Opens <http://localhost:3110/> (presenter mode at <http://localhost:3110/#/presenter/>).
 - **Validate & build:** `RESLIDES=/path/to/reslides npm run check` · `RESLIDES=/path/to/reslides npm run build`
 
-## Structure (28 slides)
+## Structure (27 slides)
 
-1. **Session 11 · Live Four-Loop Check-in & Final Hand-in (`s01`–`s12`)**: 7-minute four-loop showcase board, next Wednesday's end-to-end completion bar and final bug clinic, optional post-class frontier-model upgrade (outside grading), CSV → `evidence-table.tex` → Overleaf `XeLaTeX` + `biblatex-chicago` compilation, six sections of `main.tex`, and repository checklist (`../instructions.md`).
+1. **Session 11 · Live Four-Loop Check-in & Final Hand-in (`s01`–`s12`)**: 7-minute four-loop showcase board, next Wednesday's end-to-end completion bar and final bug clinic, CSV → `evidence-table.tex` → Overleaf `XeLaTeX` + `biblatex-chicago` compilation, six sections of `main.tex`, and repository checklist (`../instructions.md`).
 2. **Semester Review Packet · Sessions 1–10 (`r01`–`r16`)**:
    - **Sessions 1–2 (`r02`–`r03`)**: Critical AI cost shifts, untouched `sources/raw/` vs. `sources/processed/`, and why OCR finds places rather than quotable text.
    - **Session 3 (`r04`–`r05`)**: Completion vs. Chat vs. Agent vs. ReAct (`Model + Instructions + Tools + Loop`), progressive `SKILL.md` loading, and relational database foreign keys (`place_id → id`).
